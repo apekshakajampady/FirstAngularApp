@@ -1,0 +1,14 @@
+<p>products works!</p>
+<div class="product-form">
+    <h2>Add a new product</h2>
+    <form (ngSubmit)="onPushData()" [formGroup]="productForm">
+        <div>
+            <label for="productName">Product Name:</label>
+            <input id="productName" formControlName="productName" placeholder="Enter product name">
+        </div>
+        <div>
+            <label for="productPrice">Product Price:</label>
+            <input id="productPrice" formControlName="productPrice" placeholder="Enter product price">
+        </div>
+        <button type="submit">Add Product</button>
+    </form>
